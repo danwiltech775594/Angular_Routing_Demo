@@ -9,13 +9,15 @@ import { RegisterComponent } from './register/register.component';
 import { FormsModule} from "@angular/forms";
 import {UserService} from "./Services/user.service.client";
 import { CourseService } from './Services/CourseService';
+import { CourseNavigatorComponent } from './course-navigator/course-navigator.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     ProfileComponent,
-    RegisterComponent
+    RegisterComponent,
+    CourseNavigatorComponent
   ],
   imports: [
     routing,

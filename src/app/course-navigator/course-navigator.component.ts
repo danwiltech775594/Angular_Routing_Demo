@@ -10,18 +10,10 @@ export class CourseNavigatorComponent implements OnInit {
 
   constructor(private courseService: CourseService) { }
   courses: any[] | undefined;
-  selectedCourse = {
-    modules: [],
-    id: undefined
-  };
-
   ngOnInit(): void {
-  this.courseService.findAllCourses()
-  .then(courses => this.courses = courses)
+  this.courseService.findAllCourses().then(courses => this.courses = courses);
   }
 
-  selectCourse(course: any){
-    this.selectedCourse = course;
-  }
+  
   
 }
